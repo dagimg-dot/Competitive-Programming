@@ -20,8 +20,7 @@ Output one number — the maximal number of dominoes, which can be placed.
 """
 
 def domino_piling():
-    m = int(input())
-    n = int(input())
+    m,n = map(int, input().split())
     print((m * n) // 2)
 
 domino_piling()
