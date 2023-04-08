@@ -24,3 +24,16 @@ class Solution(object):
         return x if x >= -(2**31) and x <= (2**31 - 1) else 0
 
 # @lc code=end
+
+# The steps I took to solve this problem:
+# 1. I checked if the input is 0 and returned 0.
+# 2. I checked the sign of the input and stored it in a variable.
+# 3. I converted the input to a positive number.
+# 4. I set up a while loop that runs until the input is 0.
+# 5. I added the last digit of the input to the rev_x string.
+# 6. I removed the last digit of the input.
+# 7. I converted the rev_x string to an integer.
+# 8. I multiplied the integer by the sign.
+# 9. I checked if the integer is within the range of a 32-bit integer.
+# 10. I returned the integer if it is within the range, else I returned 0.
+
