@@ -22,5 +22,12 @@ class Solution:
         return res
 # @lc code=end
 
-
-
+# Steps I took to solve this problem:
+# 1. Sort the array
+# 2. Create a new array of the same size and fill it with 0s
+# 3. Loop through the new array and fill it with the elements from the sorted array
+# 4. If the index is even, fill it with the element from the sorted array at index i // 2
+# This is because the first half of the sorted array will be the smallest elements
+# 5. If the index is odd, fill it with the element from the sorted array at index n - 1 - i // 2
+# This is because the second half of the sorted array will be the largest elements
+# 6. Return the new array
