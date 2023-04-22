@@ -16,6 +16,7 @@ import sys
 #
 
 def countingValleys(steps, path):
+    # Write your code here
     valley = 0
     countD = 0
     for step in path:
@@ -27,12 +28,17 @@ def countingValleys(steps, path):
               valley += 1
 
     return valley
-
     
 
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
+    steps = int(input().strip())
 
+    path = input()
 
+    result = countingValleys(steps, path)
 
-x = countingValleys(12,'DDUUUUDDUDD')
-print(x)
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
