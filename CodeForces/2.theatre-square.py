@@ -29,3 +29,13 @@ def theatre_square():
     print(count)
 
 theatre_square()
+
+# Steps to solve:
+# 1. Take input
+# 2. Calculate the number of flagstones needed to cover the only the length of the square by dividing the 
+# length of the square by the length of the flagstone in ceil function which returns the smallest integer 
+# greater than or equal to the number
+# 3. Calculate the number of flagstones needed to cover the only the breadth of the square
+# 4. Multiply the two values to get the total number of flagstones needed to cover the square
+# 5. Print the result
+
